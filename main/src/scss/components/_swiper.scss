@@ -1,0 +1,56 @@
+.swiper {
+    &-pagination {
+        &-bullet {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background-color: #c4c4c4;
+            border-radius: 0;
+            color: #223444;
+            opacity: 1;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                color: $accent-color;
+                background-color: $mercury-color;
+            }
+
+            &:focus-visible {
+                color: #223444;;
+                background-color: $romantic-focus-color;
+            }
+
+            &:active {
+                color: $color-light;
+                background-color: $accent-color;
+            }
+
+            &-active {
+                background-color: $accent-color;
+                color: $color-light;
+
+                &:hover,
+                &:focus-visible {
+                    color: $color-light;
+                    background-color: $accent-color;
+                }
+    
+                &:active {
+                    background-color: #c4c4c4;
+                    color: #223444;
+                }
+            }
+
+        }
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 15px;
+}

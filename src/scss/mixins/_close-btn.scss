@@ -1,0 +1,45 @@
+@mixin close-button ($circleSize, $lineWidth) {
+    width: $circleSize;
+    height: $circleSize;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding: 0;
+    border-radius: 100%;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 4px;
+      height: 1px;
+      width: $lineWidth;
+      background-color: $color-light;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 4px;
+      height: 1px;
+      width: $lineWidth;
+      background-color: $color-light;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    &:focus-visible {
+      background-color: $focus-color;
+    }
+
+    &:active  {
+      background-color: $active-color;
+    }
+}

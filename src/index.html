@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>High Pass - фотостудия</title>
+  <meta name="title" content="High Pass - фотостудия">
+  <meta name="description" content="Здесь вы сможете ознакомиться с нашими работами и узнать больше о нашей фотостудии">
+
+    <!-- Favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+    
+
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <header class="header" id="up">
+    <div class="header-top">
+      <div class="container header__container">
+        <a href="#" class="header__logo logo">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav nav mini-tablet-hidden">
+          <ul class="list-reset header__list">
+            <li class="header__item">
+              <a href="#studio" class="link header__link" aria-label="Узнать больше о нашей студии">О студии</a>
+            </li>
+            <li class="header__item">
+              <a href="#projects" class="link header__link" aria-label="Узнать больше о наших проектах">Наши проекты</a>
+            </li>
+            <li class="header__item">
+              <a href="#services" class="link header__link" aria-label="Просмотреть наши услуги">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a href="#master-class" class="link header__link" aria-label="Узнать больше о наших мастер-классах">Мастер-классы</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="link header__link" aria-label="Просмотреть наши контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__wrapper mini-tablet-visible">
+          <a href="tel:+749542423532" class="link header__phone mini-tablet-visible">+7 (495) 42-423-532</a>
+          <form action="#" autocomplete="on" class="header-bottom__form search-form mini-tablet-visible">
+            <div class="search-form__open">
+              <button class="btn search-form__close-btn" aria-label="Закрыть поиск"></button>
+              <input class="search-form__input" type="search" name="search" placeholder="Что будем искать?" />
+            </div>
+            <button class="search-form__btn search-form__btn--994" aria-label="Кнопка поиска по сайту">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.7">
+                <path d="M18.4437 16.6875L15.232 13.9406C16.1766 12.7195 16.6875 11.2266 16.6875 9.65625C16.6875 7.77656 15.9539 6.01406 14.6273 4.68516C13.3008 3.35625 11.5336 2.625 9.65625 2.625C7.77891 2.625 6.01172 3.35859 4.68516 4.68516C3.35625 6.01172 2.625 7.77656 2.625 9.65625C2.625 11.5336 3.35859 13.3008 4.68516 14.6273C6.01172 15.9562 7.77656 16.6875 9.65625 16.6875C11.2266 16.6875 12.7172 16.1766 13.9383 15.2344L17.1499 17.9789C17.1678 17.9968 17.189 18.0109 17.2123 18.0206C17.2356 18.0303 17.2606 18.0352 17.2859 18.0352C17.3111 18.0352 17.3361 18.0303 17.3594 18.0206C17.3828 18.0109 17.4039 17.9968 17.4218 17.9789L18.4437 16.9594C18.4615 16.9415 18.4757 16.9203 18.4854 16.897C18.495 16.8737 18.5 16.8487 18.5 16.8234C18.5 16.7982 18.495 16.7732 18.4854 16.7499C18.4757 16.7265 18.4615 16.7053 18.4437 16.6875ZM13.3688 13.3688C12.375 14.3602 11.0578 14.9062 9.65625 14.9062C8.25469 14.9062 6.9375 14.3602 5.94375 13.3688C4.95234 12.375 4.40625 11.0578 4.40625 9.65625C4.40625 8.25469 4.95234 6.93516 5.94375 5.94375C6.9375 4.95234 8.25469 4.40625 9.65625 4.40625C11.0578 4.40625 12.3773 4.95 13.3688 5.94375C14.3602 6.9375 14.9062 8.25469 14.9062 9.65625C14.9062 11.0578 14.3602 12.3773 13.3688 13.3688Z" fill="white"/>
+                </g>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="socials header__socials mini-tablet-hidden">
+          <ul class="list-reset socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link" aria-label="Наша фотостудия в инстаграме">
+                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.1289 15.0001C12.1289 16.5858 13.4143 17.8712 15 17.8712C16.5857 17.8712 17.8711 16.5858 17.8711 15.0001C17.8711 13.4144 16.5857 12.129 15 12.129C13.4143 12.129 12.1289 13.4144 12.1289 15.0001Z" fill="#CACACA"/>
+                  <path d="M8.28558 9.92003C8.4236 9.54604 8.64378 9.20752 8.92989 8.92966C9.20775 8.64355 9.54604 8.42337 9.92026 8.28535C10.2238 8.16748 10.6797 8.02718 11.5195 7.98895C12.4279 7.94753 12.7003 7.9386 15.0001 7.9386C17.3001 7.9386 17.5725 7.9473 18.4807 7.98872C19.3204 8.02718 19.7766 8.16748 20.0799 8.28535C20.4541 8.42337 20.7926 8.64355 21.0702 8.92966C21.3563 9.20752 21.5765 9.54581 21.7148 9.92003C21.8326 10.2235 21.9729 10.6797 22.0112 11.5195C22.0526 12.4277 22.0615 12.7 22.0615 15.0001C22.0615 17.2999 22.0526 17.5722 22.0112 18.4807C21.9729 19.3204 21.8326 19.7764 21.7148 20.0799C21.5765 20.4541 21.3566 20.7924 21.0705 21.0702C20.7926 21.3563 20.4543 21.5765 20.0801 21.7145C19.7766 21.8326 19.3204 21.9729 18.4807 22.0112C17.5725 22.0526 17.3003 22.0613 15.0003 22.0613C12.7 22.0613 12.4277 22.0526 11.5197 22.0112C10.6799 21.9729 10.2238 21.8326 9.92026 21.7145C9.16907 21.4248 8.57535 20.8311 8.28558 20.0799C8.16771 19.7764 8.0274 19.3204 7.98895 18.4807C7.94753 17.5722 7.93883 17.2999 7.93883 15.0001C7.93883 12.7 7.94753 12.4277 7.98895 11.5195C8.02718 10.6797 8.16748 10.2235 8.28558 9.92003ZM15.0001 19.4227C17.4429 19.4227 19.4232 17.4427 19.4232 14.9998C19.4232 12.557 17.4429 10.5769 15.0001 10.5769C12.5574 10.5769 10.5771 12.557 10.5771 14.9998C10.5771 17.4427 12.5574 19.4227 15.0001 19.4227ZM10.4023 11.4357C10.9731 11.4357 11.4359 10.9729 11.4359 10.4021C11.4359 9.83122 10.9731 9.36842 10.4023 9.36842C9.83145 9.36842 9.36865 9.83122 9.36865 10.4021C9.36888 10.9729 9.83145 11.4357 10.4023 11.4357Z" fill="#CACACA"/>
+                  <path d="M15 0C23.283 0 30 6.717 30 15C30 23.283 23.283 30 15 30C6.717 30 0 23.283 0 15C0 6.717 6.717 0 15 0ZM6.43867 18.5511C6.48033 19.468 6.62613 20.094 6.83899 20.6419C7.28645 21.7989 8.20107 22.7135 9.35806 23.161C9.90578 23.3739 10.532 23.5194 11.4487 23.5613C12.3672 23.6032 12.6606 23.6133 14.9998 23.6133C17.3392 23.6133 17.6324 23.6032 18.5511 23.5613C19.4678 23.5194 20.094 23.3739 20.6417 23.161C21.2167 22.9447 21.7371 22.6057 22.1674 22.1674C22.6055 21.7374 22.9445 21.2167 23.1608 20.6419C23.3736 20.0942 23.5194 19.468 23.5611 18.5513C23.6034 17.6326 23.6133 17.3392 23.6133 15C23.6133 12.6608 23.6034 12.3674 23.5613 11.4489C23.5197 10.532 23.3741 9.90601 23.1612 9.35806C22.9449 8.78334 22.6057 8.26263 22.1674 7.83257C21.7374 7.39426 21.2167 7.05528 20.6419 6.83899C20.094 6.62613 19.468 6.48056 18.5511 6.43867C17.6326 6.39679 17.3392 6.38672 15 6.38672C12.6608 6.38672 12.3674 6.39679 11.4489 6.4389C10.532 6.48056 9.90601 6.62613 9.35806 6.83876C8.78334 7.05505 8.26263 7.39426 7.83234 7.83257C7.39426 8.26286 7.05505 8.78334 6.83899 9.35806C6.6259 9.90601 6.48033 10.532 6.43845 11.4489C6.39656 12.3674 6.38672 12.6608 6.38672 15C6.38672 17.3392 6.39656 17.6326 6.43867 18.5511Z" fill="#CACACA"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link" aria-label="Наша фотостудия в фейсбуке">
+                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 0C6.74999 0 0 6.76205 0 15.0904C0 22.6205 5.48999 28.8705 12.66 30V19.4578H8.84999V15.0904H12.66V11.762C12.66 7.98193 14.895 5.90361 18.33 5.90361C19.965 5.90361 21.675 6.18976 21.675 6.18976V9.90964H19.785C17.925 9.90964 17.34 11.0693 17.34 12.259V15.0904H21.51L20.835 19.4578H17.34V30C20.8746 29.4395 24.0933 27.6288 26.4149 24.8947C28.7364 22.1606 30.008 18.6832 30 15.0904C30 6.76205 23.25 0 15 0Z" fill="#CACACA"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link" aria-label="Наша фотостудия вконтаке">
+                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z" fill="#CACACA"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container header__container">
+        <button class="burger mobile-visible">
+          <span class="burger__line"></span>
+        </button>
+        <div class="menu mobile-visible">
+          <button class="btn menu__close-btn"></button>
+          <nav class="menu__nav">
+            <ul class="list-reset menu__list">
+              <li class="menu__item">
+                <a href="#studio" class="menu__link link">О студии</a>
+              </li>
+              <li class="menu__item">
+                <a href="#projects" class="menu__link link">Наши проекты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#services" class="menu__link link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#master-class" class="menu__link link">Мастер-классы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+749542423532" class="link menu__phone">+7 (495) 42-423-532</a>
+        </div>
+        <nav class="header__nav nav mini-tablet-visible">
+          <ul class="list-reset header__list">
+            <li class="header__item">
+              <a href="#studio" class="link header__link" aria-label="Узнать больше о нашей студии">О студии</a>
+            </li>
+            <li class="header__item">
+              <a href="#projects" class="link header__link" aria-label="Узнать больше о наших проектах">Наши проекты</a>
+            </li>
+            <li class="header__item">
+              <a href="#services" class="link header__link" aria-label="Просмотреть наши услуги">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a href="#master-class" class="link header__link" aria-label="Узнать больше о наших мастер-классах">Мастер-классы</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="link header__link" aria-label="Просмотреть наши контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+749542423532" class="link header__phone mini-tablet-hidden">+7 (495) 42-423-532</a>
+        <form action="#" autocomplete="on" method="POST" class="header-bottom__form search-form mini-tablet-hidden">
+          <input class="search-form__input" type="search" required name="search" placeholder="Что будем искать?" />
+          <button class="search-form__btn" aria-label="Кнопка поиска по сайту">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.7">
+              <path d="M18.4437 16.6875L15.232 13.9406C16.1766 12.7195 16.6875 11.2266 16.6875 9.65625C16.6875 7.77656 15.9539 6.01406 14.6273 4.68516C13.3008 3.35625 11.5336 2.625 9.65625 2.625C7.77891 2.625 6.01172 3.35859 4.68516 4.68516C3.35625 6.01172 2.625 7.77656 2.625 9.65625C2.625 11.5336 3.35859 13.3008 4.68516 14.6273C6.01172 15.9562 7.77656 16.6875 9.65625 16.6875C11.2266 16.6875 12.7172 16.1766 13.9383 15.2344L17.1499 17.9789C17.1678 17.9968 17.189 18.0109 17.2123 18.0206C17.2356 18.0303 17.2606 18.0352 17.2859 18.0352C17.3111 18.0352 17.3361 18.0303 17.3594 18.0206C17.3828 18.0109 17.4039 17.9968 17.4218 17.9789L18.4437 16.9594C18.4615 16.9415 18.4757 16.9203 18.4854 16.897C18.495 16.8737 18.5 16.8487 18.5 16.8234C18.5 16.7982 18.495 16.7732 18.4854 16.7499C18.4757 16.7265 18.4615 16.7053 18.4437 16.6875ZM13.3688 13.3688C12.375 14.3602 11.0578 14.9062 9.65625 14.9062C8.25469 14.9062 6.9375 14.3602 5.94375 13.3688C4.95234 12.375 4.40625 11.0578 4.40625 9.65625C4.40625 8.25469 4.95234 6.93516 5.94375 5.94375C6.9375 4.95234 8.25469 4.40625 9.65625 4.40625C11.0578 4.40625 12.3773 4.95 13.3688 5.94375C14.3602 6.9375 14.9062 8.25469 14.9062 9.65625C14.9062 11.0578 14.3602 12.3773 13.3688 13.3688Z" fill="white"/>
+              </g>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <!--PROMO-->
+    <section class="promo" id="promo">
+      <div class="container promo__container">
+        <article class="promo__photoshoot">
+          <div class="promo__text-block">#мастеркласс</div>
+          <span class="promo__photoshoot-person">Мастер-класс от&nbsp;Игоря Робова</span>
+          <h2 class="title promo__photoshoot-title">Неоновый фотосет 2.0 7&nbsp;июля 20:00</h2>
+          <button class="btn promo__photoshoot-btn btn-filled">Узнать больше</button>
+        </article>
+        <div class="promo__photos">
+          <div class="promo__photos-top">
+            <h2 class="promo__photos-title title">
+              Работы участников предыдущего мастер-класса
+            </h2>
+            <picture>
+              <source media="(max-width:375px)" srcset="img/woman-1-mobile.jpg">
+              <source media="(max-width:1024px)" srcset="img/woman-1-1024.jpg">
+              <img src="img/woman-1.jpg" alt="photo" class="promo__photos-img">
+            </picture>
+          </div>
+          <div class="promo__photos-photo">
+            <img src="img/woman-2.jpg" alt="photo" class="promo__img">
+          </div>
+          <div class="promo__photos-photo">
+            <img src="img/woman-3.jpg" alt="photo" class="promo__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO -->
+    <section class="studio" id="studio">
+      <div class="container studio__container">
+        <h2 class="title studio__title">
+          О студии
+        </h2>
+        <div class="studio__wrapper">
+          <p class="paragraph-reset studio__descr">
+            В&nbsp;рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от&nbsp;нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость распределения внутренних резервов и&nbsp;ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально&nbsp;-&nbsp;технической и&nbsp;кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и&nbsp;нарушающими общечеловеческие нормы этики.
+          </p>
+          <div class="studio__subscribe">
+            <div class="studio__subscribe-photo">
+              <picture>
+                <source media="(max-width:375px)" srcset="img/camera-mobile.jpg">
+                <source media="(max-width:992px)" srcset="img/camera-992.jpg">
+                <img src="img/camera.jpg" alt="camera" class="studio__img">
+              </picture>
+            </div>
+            <div class="studio__subscribe-items">
+              <span class="studio__text" >Подписаться на&nbsp;рассылку</span>   
+                <form action="#" class="studio__subscribe-form">
+                  <label>
+                    <input required  data-validate-field="email" type="email" name="email" placeholder="Email" class="studio__input">
+                  </label>
+                  <button type="submit" class="btn studio__subscribe-btn btn-filled" aria-label="Подписаться на нашу рассылку">Отправить</button>
+                </form>         
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="container projects__container">
+        <h2 class="title projects__title">
+          Наши проекты
+        </h2>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide projects__slide">
+              <div class="projects__wrapper">
+                <article class="projects__item">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--landscape">#пейзаж</div>
+                    <picture>
+                      <source media="(max-width:650px)" srcset="img/project-1-mobile.jpg">
+                      <img src="img/project-1.jpg" alt="landscape">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Синтетически, смешаны с&nbsp;не уникальными данными до&nbsp;степени...
+                  </p>
+                  <span class="projects__date projects__date-grey">16 июня</span>
+                </article>
+                <article class="projects__item">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--portrait">#портрет</div>
+                    <picture>
+                      <source media="(max-width:650px)" srcset="img/project-2-mobile.jpg">
+                      <img src="img/project-2.jpg" alt="portrait">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr ">
+                    В&nbsp;своём стремлении улучшить опыт мы&nbsp;упускаем, что явные
+                  </p>
+                  <span class="projects__date projects__date-grey">28 мая</span>
+                </article>
+                <article class="projects__item">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--objects">#предмет</div>
+                    <picture>
+                      <source media="(max-width:650px)" srcset="img/project-3-mobile.jpg">
+                      <img src="img/project-3.jpg" alt="objects">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Равным образом, высокое качество позиционных...
+                  </p>
+                  <span class="projects__date projects__date-grey">14 мая</span>
+                </article>
+                <article class="projects-second__item tablet-visible">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--landscape">#пейзаж</div>
+                    <img src="img/project-4.jpg" alt="landscape">
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Равным образом, сложившаяся структура организации...
+                  </p>
+                  <span class="projects__date projects__date-grey">15 февраля</span>
+                </article>
+                <article class="projects-oblivion">
+                  <div class="projects-oblivion__text-block">#проектзабвение</div>
+                  <span class="projects__date-white projects-oblivion__date ">20 марта</span>
+                  <h3 class="title projects__sub-title">
+                    Забвение
+                  </h3>
+                  <span class="projects__text">Играет важную роль в&nbsp;формировании глубокомысленных
+                    рассуждений</span>
+                  <button class="btn projects__btn btn-empty" aria-label="Узнать больше о проекте">О проекте</button>
+                </article>
+                <article class="projects-fuji">
+                  <div class="projects-fuji__text-block">#fuji</div>
+                  <span class="projects__date-white projects-fuji__date">9 апреля</span>
+                  <h3 class="title projects__sub-title">
+                    Cемантический разбор
+                  </h3>
+                  <span class="projects__text">В&nbsp;рамках спецификации современных стандартов, интерактивные
+                    прототипы</span>
+                  <button class="btn projects__btn btn-empty" aria-label="Узнать больше о проекте">О проекте</button>
+                </article>
+                <article class="projects__item-big projects__item-big--retouch">
+                  <div class="projects__photo">
+                    <div class="projects__text-block-retouch">#ретушь</div>
+                    <picture>
+                      <source media="(max-width:375px)" srcset="img/project-retouch-mobile.jpg">
+                      <img src="img/project-retouch.jpg" alt="fruits">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Как принято считать, многие известные личности и&nbsp;по&nbsp;сей день остаются уделом либералов...
+                  </p>
+                  <span class="projects__date projects__date-grey">
+                    9 марта
+                  </span>
+                </article>
+                <article class="projects__item-big projects__item-big--portrait">
+                  <div class="projects__photo">
+                    <div class="projects__text-block--portrait">#портрет</div>
+                    <picture>
+                      <source media="(max-width:375px)" srcset="img/project-portrait-mobile.jpg">
+                      <img src="img/project-portrait.jpg" alt="portrait">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    С&nbsp;учётом сложившейся международной обстановки, новая модель организационной...
+                  </p>
+                  <span class="projects__date projects__date-grey">
+                    1 марта
+                  </span>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-slide projects__slide">
+              <div class="projects__wrapper">
+                <article class="projects-pov">
+                  <div class="projects-pov__text-block">#портрет</div>
+                  <span class="projects__date-white projects-pov__date ">20 марта</span>
+                  <h3 class="title projects__sub-title projects-pov__title">
+                    Спорная точка зрения
+                  </h3>
+                  <span class="projects__text">Ясность нашей позиции очевидна: убеждённость некоторых оппонентов</span>
+                  <button class="btn projects__btn btn-empty" aria-label="Узнать больше о проекте">О проекте</button>
+                </article>
+                <article class="projects-second__item tablet-hidden">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--landscape">#пейзаж</div>
+                    <picture>
+                      <source media="(max-width:650px)" srcset="img/project-4-mobile.jpg">
+                      <img src="img/project-4.jpg" alt="landscape">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Равным образом, сложившаяся структура организации...
+                  </p>
+                  <span class="projects__date projects__date-grey">15 февраля</span>
+                </article>
+                <article class="projects-second__item">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--objects">#предмет</div>
+                    <picture>
+                      <source media="(max-width:650px)" srcset="img/project-5-mobile.jpg">
+                      <img src="img/project-5.jpg" alt="objects">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Безусловно, реализация намеченных плановых заданий <span class="mobile-hidden">обеспечивает...</span>
+                  </p>
+                  <span class="projects__date projects__date-grey">10 февраля</span>
+                </article>
+                <article class="projects-second__item">
+                  <div class="projects__photo">
+                    <div class="projects__text-block projects__text-block--landscape">#пейзаж</div>
+                    <picture>
+                      <source media="(max-width:650px)" srcset="img/project-6-mobile.jpg">
+                      <img src="img/project-6.jpg" alt="landscape">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Безусловно, курс на&nbsp;социальный национальный...
+                  </p>
+                  <span class="projects__date projects__date-grey">7 февраля</span>
+                </article>
+                <article class=" projects__item-big projects__item-big--retouch-2">
+                  <div class="projects__photo">
+                    <div class="projects__text-block-retouch">#ретушь</div>
+                    <picture>
+                      <source media="(max-width:375px)" srcset="img/project-retouch-2-mobile.jpg">
+                      <img src="img/project-retouch-2.jpg" alt="lamps">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr">
+                    Идейные соображения высшего порядка, а&nbsp;также убеждённость некоторых оппонентов...
+                  </p>
+                  <span class="projects__date projects__date-grey">
+                    20 февраля
+                  </span>
+                </article>
+                <article class="projects__item-big projects__item-big--portrait-2">
+                  <div class="projects__photo">
+                    <div class="projects__text-block--portrait">#портрет</div>
+                    <picture>
+                      <source media="(max-width:375px)" srcset="img/project-portrait-2-mobile.jpg">
+                      <img src="img/project-portrait-2.jpg" alt="portrait">
+                    </picture>
+                  </div>
+                  <p class="paragraph-reset projects__descr ">
+                    Прежде всего, повышение уровня гражданского сознания говорит о&nbsp;возможностях приоритизации...
+                  </p>
+                  <span class="projects__date projects__date-grey">
+                    18 февраля
+                  </span>
+                </article>
+                <article class="projects-jazz">
+                  <div class="projects-jazz__text-block">#проектджаз</div>
+                  <span class="projects__date-white projects-jazz__date">9 апреля</span>
+                  <h3 class="title projects__sub-title projects-jazz__date">
+                    Cемантический разбор
+                  </h3>
+                  <span class="projects__text">В&nbsp;рамках спецификации современных стандартов, интерактивные
+                    прототипы</span>
+                  <button class="btn projects__btn btn-empty" aria-label="Узнать больше о проекте">О проекте</button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container services__container">
+        <h2 class="title services__title">Услуги студии</h2>
+        <div class="services-tabs">
+          <button class="btn services-tabs__btn services-tabs__btn-active" data-btn="1">Основной перечень</button>
+          <button class="btn services-tabs__btn" data-btn="2">Услуги по ретуши</button>
+          </div>
+          <aside class="services-promo__block">
+            <span class="services-promo__text">
+              1,5 часа портретной съемки + ретушь 10 снимков
+            </span>
+            <button class="btn btn-filled services-promo__btn">
+              Узнать больше
+            </button>
+          </aside>
+          <div class="services__wrapper">
+            <div class="services__items services__items-active" data-items="1">
+              <div class="services__items-inside services__items-inside-active">
+                <article class="services__item">
+                  <picture>
+                    <source media="(max-width:992px)" srcset="img/services-1-992.jpg">
+                    <img src="img/services-1.jpg" alt="photo" class="services__img">
+                  </picture>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Высокий уровень вовлечения</a>
+                    </h3>
+                    <p class="paragraph-reset services__descr">
+                      Высокий уровень вовлечения представителей целевой аудитории является четким доказательством<span class="tablet-hidden">простого факта.</span> 
+                    </p>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item">
+                  <picture>
+                    <source media="(max-width:992px)" srcset="img/services-2-992.jpg">
+                    <img src="img/services-2.jpg" alt="photo" class="services__img">
+                  </picture>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Диаграммы связей</a>
+                    </h3>
+                    <p class="paragraph-reset services__descr">
+                      Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий влечет за&nbsp;собой процесс.
+                    </p>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item">
+                  <picture>
+                    <source media="(max-width:992px)" srcset="img/services-3-992.jpg">
+                    <img src="img/services-3.jpg" alt="photo" class="services__img">
+                  </picture>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Высокотехнологичная концепция</a>
+                    </h3>
+                    <p class="paragraph-reset services__descr">
+                      В&nbsp;частности, убеждённость некоторых оппонентов способствует подготовке и&nbsp;реализации анализа существующих <span class="tablet-hidden">паттернов.</span>
+                    </p>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item">
+                  <picture>
+                    <source media="(max-width:992px)" srcset="img/services-4-992.jpg">
+                    <img src="img/services-4.jpg" alt="photo" class="services__img">
+                  </picture>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Сложившаяся структура организации</a>
+                    </h3>
+                    <p class="paragraph-reset services__descr">
+                      Кстати, сторонники тоталитаризма в&nbsp;науке будут объединены в&nbsp;целые кластеры себе подобных.
+                    </p>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item">
+                  <picture>
+                    <source media="(max-width:992px)" srcset="img/services-5-992.jpg">
+                    <img src="img/services-5.jpg" alt="photo" class="services__img">
+                  </picture>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Внутренние резервы и ресурсы</a>
+                    </h3>
+                    <p class="paragraph-reset services__descr">
+                      Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также ключевые особенности структуры проекта являются только методом.
+                    </p>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="services__items-two services__items" data-items="2">
+              <div class="services__items-inside services__items-two-inside">
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-1.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Принимая во&nbsp;внимание показатели</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-2.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Таким образом, выбранный нами...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-3.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Также как высокое качество...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-4.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Безусловно, семантический <span class="tablet-hidden">разбор...</span></a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-5.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Внезапно, предприниматели в&nbsp;интернете...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-6.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Есть над чем подумать: активные...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-7.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Сделанные на&nbsp;базе аналитики выводы...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-8.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Как принято считать, сторонники...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-9.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Задача организации, в&nbsp;особенности...</a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+                <article class="services__item-two">
+                  <div class="services__photo-wrapper">
+                    <img src="img/services-retouch-10.jpg" alt="photo" class="services__img">
+                  </div>
+                  <div class="services__content">
+                    <h3 class="title services__sub-title">
+                      <a href="#" class="services__sub-title-link">Активно развивающиеся <span class="tablet-hidden">страны...</span></a>
+                    </h3>
+                    <a href="#" class="link services__link">Подробнее</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="services-works">
+              <h3 class="title services-works__title">
+                Выполненные работы
+              </h3>
+              <div class="services-works__wrapper services-works__wrapper-active" data-works="1">
+                <div class="services-works__inside services-works__inside-active">
+                  <img src="img/works-1.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-2.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-3.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-4.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-5.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-6.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-7.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-8.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-9.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-10.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-11.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-12.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-13.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-14.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-15.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-16.jpg" alt="photo" class="services-works__photo">
+                </div>
+              </div>
+              <div class="services-works__wrapper" data-works="2">
+                <div class="services-works__inside">
+                  <img src="img/works-17.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-18.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-19.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-20.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-21.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-22.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-23.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-24.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-25.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-26.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-27.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-28.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-29.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-30.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-31.jpg" alt="photo" class="services-works__photo">
+                  <img src="img/works-32.jpg" alt="photo" class="services-works__photo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--MASTER-CLASS-->
+    <section class="master-class" id="master-class">
+      <div class="container master-class__container">
+        <h2 class="title master-class__title">Мастер-классы</h2>
+        <div class="master-class__wrapper">
+          <div class="master-class__photo-wrapper">
+            <img src="img/camera-mc.jpg" alt="camera" class="master-class__img">
+          </div>
+          <div class="master-class-tape">
+            <div class="master-class__date master-class__date--large">
+              <span class="master-class__calendar">8 июня</span>
+              <span class="master-class__time">15:00</span>
+            </div>
+            <h3 class="title master-class__sub-title master-class__sub-title--large">
+              Пленка для начинающих
+            </h3>
+            <p class="paragraph-reset master-class__descr">
+              Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: семантический разбор внешних противодействий, в своём классическом представлении.
+            </p>
+            <button class="btn btn-filled master-class__btn">
+              Узнать больше 
+            </button>
+          </div>
+          <article class="master-class__item">
+            <img src="img/master-class-1.jpg" alt="photo" class="master-class__item-photo">
+            <div class="master-class__content">
+              <div class="master-class__date">
+                <span class="master-class__calendar">9 июня</span>
+                <span class="master-class__time">15:00</span>
+              </div>
+              <h3 class="title master-class__sub-title master-class__sub-title">
+                Ретушь. Продвинутый уровень
+              </h3>
+            </div>
+          </article>
+          <article class="master-class__item">
+            <img src="img/master-class-2.jpg" alt="photo" class="master-class__item-photo">
+            <div class="master-class__content">
+              <div class="master-class__date">
+                <span class="master-class__calendar">10 июня</span>
+                <span class="master-class__time">16:00</span>
+              </div>
+              <h3 class="title master-class__sub-title master-class__sub-title">
+                Портретная съемка. Свет
+              </h3>
+            </div>
+          </article>
+          <article class="master-class__item">
+            <img src="img/master-class-3.jpg" alt="photo" class="master-class__item-photo">
+            <div class="master-class__content">
+              <div class="master-class__date">
+                <span class="master-class__calendar">11 июня</span>
+                <span class="master-class__time">16:00</span>
+              </div>
+              <h3 class="title master-class__sub-title master-class__sub-title">
+                Макросъемка. Проблемы и нюансы
+              </h3>
+            </div>
+          </article>
+          <article class="master-class__item">
+            <img src="img/master-class-4.jpg" alt="photo" class="master-class__item-photo">
+            <div class="master-class__content">
+              <div class="master-class__date">
+                <span class="master-class__calendar">13 июня</span>
+                <span class="master-class__time">16:00</span>
+              </div>
+              <h3 class="title master-class__sub-title master-class__sub-title">
+                Творческая ретушь для начинающих
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <h2 class="title contacts__title">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div id="map" class="contacts__map map">
+            <div class="contacts__map-info contacts__map-info-active">
+              <button class="close-btn">&times;</button>
+              <h3 class="title map__sub-title">
+                Студия “High pass”
+              </h3>
+              <span class="map__text">
+                107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82 
+                <a href="tel:+749542423532" class="map__phone link tablet-visible">+7 (495) 42-423-532</a>
+              </span>
+              <a href="tel:+749542423532" class="tablet-hidden map__phone link">+7 (495) 42-423-532</a>
+            </div>
+          </div>
+          <div class="contacts__application">
+            <h3 class="title contacts__sub-title">
+              Оставить заявку
+            </h3>
+            <span class="contacts__text">
+              Оставьте ваши данные, указав в&nbsp;графе&laquo;Комментарий&raquo; желаемые время и&nbsp;дату съемки или другого мероприятия
+            </span>
+            <form action="#" class="contacts__form form">
+              <label class="form__label">
+                  <input required type="text" name="name" data-validate-field="name" placeholder="Имя" class="form__input">
+              </label>
+              <label  class="form__label">
+                <input required type="email" data-validate-field="email"  name="email" placeholder="E-mail" class="form__input">
+              </label>
+              <textarea class="form__textarea" name="comments" placeholder="Комментарий"></textarea>
+              <button type="submit" class="btn btn-filled form__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer-logo">
+        <a href="#" class="footer-logo__link logo">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+        <span class="footer-logo__text">
+          Фотостудия High pass® 2018-2020
+        </span>
+      </div>
+      <div class="footer__text mini-tablet-hidden ">
+        <p class="paragraph-reset footer__descr">
+          Которая из&nbsp;моих фотографий самая любимая?
+          <span>Та, которую я&nbsp;собираюсь снять завтра.</span>
+        </p>
+        <span class="footer__author">&copy;&nbsp;Имоджен Каннингем</span>
+      </div>
+      <div class="footer__socials socials">
+        <span class="footer__socials-text">
+          Больше интересного:
+        </span>
+        <ul class="list-reset socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Наша фотостудия в инстаграме">
+              <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.1289 15.0001C12.1289 16.5858 13.4143 17.8712 15 17.8712C16.5857 17.8712 17.8711 16.5858 17.8711 15.0001C17.8711 13.4144 16.5857 12.129 15 12.129C13.4143 12.129 12.1289 13.4144 12.1289 15.0001Z" fill="#CACACA"/>
+                <path d="M8.28558 9.92003C8.4236 9.54604 8.64378 9.20752 8.92989 8.92966C9.20775 8.64355 9.54604 8.42337 9.92026 8.28535C10.2238 8.16748 10.6797 8.02718 11.5195 7.98895C12.4279 7.94753 12.7003 7.9386 15.0001 7.9386C17.3001 7.9386 17.5725 7.9473 18.4807 7.98872C19.3204 8.02718 19.7766 8.16748 20.0799 8.28535C20.4541 8.42337 20.7926 8.64355 21.0702 8.92966C21.3563 9.20752 21.5765 9.54581 21.7148 9.92003C21.8326 10.2235 21.9729 10.6797 22.0112 11.5195C22.0526 12.4277 22.0615 12.7 22.0615 15.0001C22.0615 17.2999 22.0526 17.5722 22.0112 18.4807C21.9729 19.3204 21.8326 19.7764 21.7148 20.0799C21.5765 20.4541 21.3566 20.7924 21.0705 21.0702C20.7926 21.3563 20.4543 21.5765 20.0801 21.7145C19.7766 21.8326 19.3204 21.9729 18.4807 22.0112C17.5725 22.0526 17.3003 22.0613 15.0003 22.0613C12.7 22.0613 12.4277 22.0526 11.5197 22.0112C10.6799 21.9729 10.2238 21.8326 9.92026 21.7145C9.16907 21.4248 8.57535 20.8311 8.28558 20.0799C8.16771 19.7764 8.0274 19.3204 7.98895 18.4807C7.94753 17.5722 7.93883 17.2999 7.93883 15.0001C7.93883 12.7 7.94753 12.4277 7.98895 11.5195C8.02718 10.6797 8.16748 10.2235 8.28558 9.92003ZM15.0001 19.4227C17.4429 19.4227 19.4232 17.4427 19.4232 14.9998C19.4232 12.557 17.4429 10.5769 15.0001 10.5769C12.5574 10.5769 10.5771 12.557 10.5771 14.9998C10.5771 17.4427 12.5574 19.4227 15.0001 19.4227ZM10.4023 11.4357C10.9731 11.4357 11.4359 10.9729 11.4359 10.4021C11.4359 9.83122 10.9731 9.36842 10.4023 9.36842C9.83145 9.36842 9.36865 9.83122 9.36865 10.4021C9.36888 10.9729 9.83145 11.4357 10.4023 11.4357Z" fill="#CACACA"/>
+                <path d="M15 0C23.283 0 30 6.717 30 15C30 23.283 23.283 30 15 30C6.717 30 0 23.283 0 15C0 6.717 6.717 0 15 0ZM6.43867 18.5511C6.48033 19.468 6.62613 20.094 6.83899 20.6419C7.28645 21.7989 8.20107 22.7135 9.35806 23.161C9.90578 23.3739 10.532 23.5194 11.4487 23.5613C12.3672 23.6032 12.6606 23.6133 14.9998 23.6133C17.3392 23.6133 17.6324 23.6032 18.5511 23.5613C19.4678 23.5194 20.094 23.3739 20.6417 23.161C21.2167 22.9447 21.7371 22.6057 22.1674 22.1674C22.6055 21.7374 22.9445 21.2167 23.1608 20.6419C23.3736 20.0942 23.5194 19.468 23.5611 18.5513C23.6034 17.6326 23.6133 17.3392 23.6133 15C23.6133 12.6608 23.6034 12.3674 23.5613 11.4489C23.5197 10.532 23.3741 9.90601 23.1612 9.35806C22.9449 8.78334 22.6057 8.26263 22.1674 7.83257C21.7374 7.39426 21.2167 7.05528 20.6419 6.83899C20.094 6.62613 19.468 6.48056 18.5511 6.43867C17.6326 6.39679 17.3392 6.38672 15 6.38672C12.6608 6.38672 12.3674 6.39679 11.4489 6.4389C10.532 6.48056 9.90601 6.62613 9.35806 6.83876C8.78334 7.05505 8.26263 7.39426 7.83234 7.83257C7.39426 8.26286 7.05505 8.78334 6.83899 9.35806C6.6259 9.90601 6.48033 10.532 6.43845 11.4489C6.39656 12.3674 6.38672 12.6608 6.38672 15C6.38672 17.3392 6.39656 17.6326 6.43867 18.5511Z" fill="#CACACA"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Наша фотостудия в фейсбуке">
+              <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C6.74999 0 0 6.76205 0 15.0904C0 22.6205 5.48999 28.8705 12.66 30V19.4578H8.84999V15.0904H12.66V11.762C12.66 7.98193 14.895 5.90361 18.33 5.90361C19.965 5.90361 21.675 6.18976 21.675 6.18976V9.90964H19.785C17.925 9.90964 17.34 11.0693 17.34 12.259V15.0904H21.51L20.835 19.4578H17.34V30C20.8746 29.4395 24.0933 27.6288 26.4149 24.8947C28.7364 22.1606 30.008 18.6832 30 15.0904C30 6.76205 23.25 0 15 0Z" fill="#CACACA"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Наша фотостудия вконтаке">
+              <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z" fill="#CACACA"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#up" class="icon-up">
+    <svg class="icon-up__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewbox="0 0 512 512" xml:space="preserve">
+    <g>
+      <circle style="fill:#ff6e30;" cx="256" cy="256" r="236.17"/>
+      <path style="fill:#ff6e30;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256
+        C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341
+        S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/>
+    </g>
+    <path style="fill:#fff;" d="M369.227,311.126c-7.734,7.694-20.226,7.694-27.96,0l-85.069-85.069l-85.069,85.069
+      c-8.309,7.119-20.841,6.147-27.96-2.161c-6.365-7.416-6.365-18.382,0-25.798l99.148-99.148c7.734-7.694,20.226-7.694,27.96,0
+      l99.148,99.148C377.06,290.96,376.98,303.452,369.227,311.126z"/>
+    </svg>
+  </a>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

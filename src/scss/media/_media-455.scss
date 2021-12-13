@@ -1,0 +1,77 @@
+@media (max-width: 455px) {
+  .header {
+    &-top {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__logo {
+      position: absolute;
+    }
+    &__wrapper {
+      width: 100%;
+      background-color: $mine-shaft-color;
+      z-index: 10;
+    }
+    .search-form {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      &__btn {
+        top: 37%;
+      }
+
+      &__open {
+        display: block;
+        max-width: none;
+        transform: translateY(-300%);
+        opacity: 0;
+        transition: transform 0.33s ease-in-out;
+
+        &.active {
+          transform: translateY(0);
+          opacity: 1;
+          background-color: $mine-shaft-color;
+        }
+      }
+
+      &__close-btn {
+        right: -30px;
+        background-color: $bleak-grey-color;
+
+      }
+
+    }
+  }
+
+  .services {
+    &-promo {
+      &__block {
+        top: 68.5%;
+        min-height: 410px;
+        max-height: 412px;
+        box-shadow: none;
+
+        &.change-position {
+          top: 77.4%;
+        }
+      }
+    }
+
+    &__items {
+      &-two {
+        &-inside {
+          grid-template-rows: repeat(10,264px);
+        }
+      }
+    }
+  }
+
+  .icon-up {
+    bottom: 20px;
+    right: 20px;
+    
+  }
+}
+

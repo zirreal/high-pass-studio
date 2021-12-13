@@ -1,0 +1,38 @@
+@mixin menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 540px;
+  background-color: $mine-shaft-color;
+  z-index: 15;
+  border-top: 1px solid #808080;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &__nav {
+    padding-top: 47px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__phone {
+    margin-top: auto;
+  }
+
+  &--active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 

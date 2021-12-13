@@ -1,0 +1,112 @@
+@media (max-width: 1350px) {
+  .header {
+    &__logo {
+      margin-right: auto;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 33px;
+      }
+    }
+  }
+
+  .promo {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 558px;
+      justify-content: center;
+    }
+
+    &__photos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 342px 186px;
+      gap: 30px;
+
+      &-top {
+        overflow: hidden;
+      }
+
+      &-photo {
+        overflow: hidden;
+      }
+    }
+  }
+
+  .studio {
+    &__container {
+      overflow: hidden;
+    }
+    &__subscribe {
+      grid-template-rows: 252px 156px;
+      &-form {
+        flex-direction: column;
+        align-items: flex-start;
+
+        input {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .services {
+    overflow: hidden;
+    &__wrapper {
+      grid-template-columns: 600px 350px;
+      grid-template-rows: minmax(800px, auto);
+      gap: unset;
+      justify-content: space-between;
+    }
+    &__items {
+      &-inside {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,184px);
+        grid-auto-rows: minmax(184px,auto);
+      }
+      &-two-inside {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,232px);
+        grid-auto-rows: minmax(232px,auto);
+        overflow: hidden;
+      }
+    }
+    &__item {
+      grid-template-columns: 218px 342px;
+      grid-template-rows: 184px;
+      grid-auto-rows: minmax(184px,auto);
+
+      img {
+        height: 100%;
+      }
+
+      &-two {
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px 81px;
+        grid-auto-rows: minmax(80px,auto);
+        row-gap: 12px;
+      }
+    }
+
+    &-works {
+      align-items: center;
+      &__inside {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,70px);
+        grid-auto-rows: minmax(70px,auto);
+      }
+    }
+  }
+
+  .master-class {
+    &__img {
+      height: 100%;
+    }
+  }
+
+  .contacts {
+    &__map-info {
+      width: 54.2%;
+    }
+  }
+}

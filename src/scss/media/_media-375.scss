@@ -1,0 +1,569 @@
+@media (max-width: 375px) {
+  .title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .header {
+    &-top {
+      padding-bottom: 30px;
+    }
+
+    &-bottom {
+      padding-bottom: 14px;
+    }
+
+    &__logo {
+      img {
+        width: 59%;
+      }
+    }
+
+    .search-form {
+      &__btn {
+        top: -1px;
+        right: -17px;
+
+        svg {
+          width: 29px;
+          height: 29px;
+        }
+      }
+    }
+
+    &__phone {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  .promo {
+    padding-bottom: 0;
+    &__container {
+      grid-template-rows: 422px 414px;
+      gap: 35px;
+    }
+
+    &__text-block {
+      @include mini-text-block(95px, 22px);
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__photoshoot {
+
+      &-person {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &-title {
+        max-width: 91%;
+        margin-bottom: 16px;
+        margin-top: 8px;
+        font-size: 24px;
+        line-height: 110%;
+      }
+
+      &-btn {
+        padding: 10px 15px;
+      }
+    }
+
+    &__photos {
+      grid-template-rows: 239px 104px;
+      &-title {
+        font-size: 18px;
+        line-height: 104%;
+      }
+
+      picture {
+        img {
+          height: auto;
+        }
+      }
+    }
+
+
+  }
+
+  .studio {
+    padding-bottom: 60px;
+    &__wrapper {
+      grid-template-columns: repeat(2, 124px);
+      grid-template-rows: 704px 440px;
+      row-gap: 19px;
+    }
+    &__title {
+      margin-bottom: 6px;
+    }
+
+    &__descr {
+      grid-column: 1 / 3;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__img {
+      width: unset;
+      height: unset;
+    }
+
+    &__subscribe {
+      grid-template-rows: 278px 136px;
+
+      &-btn {
+        padding: 10px 17px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__input {
+      min-height: 39px;
+      width: 48%;
+      padding-top: 2px;
+      padding-bottom: 3px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  .projects {
+    padding-top: 32px;
+    padding-bottom: 34px;
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__wrapper {
+      padding-bottom: 0;
+      grid-template-columns: repeat(6,22px);
+      grid-template-rows: repeat(3,272px) 422px 294px 294px 422px;
+    }
+
+    &__item {
+      .projects__date-grey {
+        bottom: -6px;
+      }
+
+      &-big {
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-fuji {
+      height: 88%;
+      padding-bottom: 30px;
+
+      &__text-block {
+       width: 52px;
+       height: 22px;
+       font-size: 12px;
+      line-height: 14px;
+      }
+
+      &__date {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-oblivion {
+      padding-bottom: 28px;
+      &__text-block {
+        width: 142px;
+        height: 22px;
+      }
+
+      .projects {
+        &__sub-title {
+          margin-bottom: 10px;
+        }
+
+        &__text {
+          margin-bottom: 22px;
+        }
+      }
+  
+    }
+
+    &__sub-title {
+      margin-bottom: 9px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      top: 31px;
+      right: 22px;
+      right: -18px;
+      left: unset;
+      transition: unset;
+      &-bullet {
+        width: 24px;
+        height: 24px;
+        margin: 0 5px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    } 
+
+    &__text-block {
+      height: 21px;
+      top: 6px;
+      font-size: 12px;
+      line-height: 14px;
+      &--landscape {
+        width: 77px;
+        
+      }
+  
+      &--portrait {
+        width: 80px;
+        height: 21px;
+        top: 6px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+  
+      &--objects {
+        width: 84px;
+      }
+    }
+
+    &__text-block-retouch {
+      width: 77px;
+      height: 22px;
+      font-size: 12px;
+      line-height: 14px
+    }
+
+    &__photo {
+      margin-bottom: 12px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__text {
+      max-width: 82%;
+      margin-bottom: 14px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__btn {
+      padding: 8px 14px;
+    }
+    
+  }
+
+  .services {
+    padding-bottom: 36px;
+    &__title {
+      margin-bottom: -2px;
+    }
+    &-tabs {
+      margin-bottom: 20px;
+      &::after {
+        bottom: -1px;
+      }
+
+      &__btn {
+        font-size: 14px;
+        line-height: 28px;
+
+        &::after {
+          bottom: 0;
+        }
+      }
+    }
+
+    &__items {
+      margin-bottom: 0;
+      &-inside {
+        grid-template-rows: 311px 330px 311px 327px 329px;
+        grid-auto-rows: minmax(330px, auto);
+        gap: 20px;
+      }
+
+      &-two {
+        &-inside {
+          grid-template-rows: repeat(10,264px);
+        }
+      }
+    }
+
+    &__item {
+      gap: 8px;
+
+      &:first-child {
+        h3 {
+          margin-bottom: 1px; 
+        }
+      }
+
+      &:nth-child(2) {
+        .services__sub-title {
+          margin-bottom: 2px;
+        }
+      }
+
+      &:nth-child(4) {
+        .services__sub-title {
+          margin-bottom: -1px;
+        }
+      }
+
+      &:not(:first-child) {
+        .services__content {
+          padding-top: 0;
+        }
+      }
+      
+
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+
+    &__content {
+      padding-top: 0;
+      justify-content: flex-start;
+    }
+
+    &__sub-title {
+      &-link {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 18px;  
+      margin-bottom: 4px;    
+    }
+
+    &__link {
+      font-size: 14px;
+
+      &::before {
+        width: 16px;
+        right: 1px;
+      }
+
+      &::after {
+        right: 2px;
+      }
+    }
+
+    &-promo {
+      &__block {
+        top: 55.25%;
+        min-height: 423px;
+        max-height: 415px;
+        padding-bottom: 33px;
+
+        &.change-position {
+          top: 66.3%;
+        }
+      }
+
+      &__text {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__btn {
+        padding: 10px 14px;
+      }
+    }
+
+    &-works {
+      padding-top: 469px;
+
+      &__title {
+        margin-bottom: 14px;
+      }
+
+      &__inside {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8,94px);
+        grid-auto-rows: 94px;
+
+        img {
+          max-height: 94px;
+        }
+      }
+
+    }
+  }
+
+  .master-class {
+    padding-top: 23px;
+    padding-bottom: 52px;
+
+    &__photo-wrapper {
+      img {
+        height: 100%;
+      }
+    }
+
+    &__wrapper {
+      grid-template-rows: 268px 284px repeat(4,80px);
+      row-gap: 21px;
+
+    }
+
+    &__sub-title {
+      font-size: 16px;
+      line-height: 16px;
+
+      &--large {
+        margin-bottom: 7px;
+      }
+    }
+
+    &-tape {
+      padding-top: 0px;
+
+      &__date {
+        &--large {
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    &__descr {
+      margin-bottom: 22px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__btn {
+      padding: 10px 15px;
+    }
+
+    &__descr {
+      margin-bottom: 21px;
+    }
+
+    &__content {
+      padding-top: 10px;
+    }
+  }
+
+  .contacts {
+    padding-top: 32px;
+    padding-bottom: 28px;
+    &__container {
+      padding: 0;
+    }
+
+    &__title {
+      padding: 0 20px;
+      margin-bottom: 12px;
+    }
+
+    &__wrapper {
+      grid-template-rows: 474px 445px;
+    }
+
+    &__map-info {
+      padding-left: 20px;
+      padding-right: 30px;
+      height: 33.2%;
+    }
+
+    .map {
+      &__text {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__sub-title {
+        padding-top: 25px;
+        margin-bottom: 10px;
+      }
+
+      &__phone {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    &__application {
+      padding:  0 20px;
+    }
+
+    &__text {
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .form {
+      &__input {
+        padding: 11px 22px;
+        margin-bottom: 18px;
+
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+
+      &__textarea {
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+
+      &__btn {
+        padding: 10px 16px;
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 36px;
+
+    &::before {
+      height: 34.6%;
+    }
+
+    &-logo {
+      padding-top: 10px;
+      margin: 0 auto;
+      img {
+        width: 60%;
+        margin-bottom: 4px;
+      }
+
+      &__text {
+        padding-left: 12px;
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+  }
+
+}

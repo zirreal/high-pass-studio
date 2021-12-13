@@ -1,0 +1,157 @@
+@import 'mixins/font-face';
+@import 'mixins/checkbox';
+@import 'mixins/search-input';
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ 
+@mixin btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin btn-filled {
+  &:hover {
+    background-color: $focus-color;
+  }
+  &:focus-visible {
+    border: 3px solid $accent-color;
+    background-color: $focus-color;
+  }
+  &:active {
+    background-color: $active-color;
+  }
+}
+
+@mixin btn-empty {
+  &:hover {
+    background-color: $accent-color;
+  }
+  &:focus-visible {
+    background-color: $focus-color;
+    border: 3px solid $accent-color;
+  }
+  &:active {
+    background-color: $active-color;
+  }
+}
+
+@mixin paragraph-reset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin title {
+  margin: 0;
+}
+
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+@mixin phone-state-bg {
+  background-position: left;
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+}
+
+@mixin mini-text-block($width, $height) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 7px;
+  right: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-light;
+  background-color: $mine-shaft-darker-color;
+}
+
+@mixin date($url) {
+  display: block;
+  padding-left: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  background-image: url($url);
+  background-position: left 3px;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+
+@mixin poster($url) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 22px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin input-states {
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    &::placeholder {
+      color: $accent-color;
+    }
+  }
+  &:focus-visible {
+    border: 1px solid $accent-color;
+  }
+  &:active {
+    border: 1px solid transparent;
+  }
+}
+
+@mixin phone {
+  padding-left: 22px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: $color-light;
+  background-image: url('../img/phone-icon.svg');
+  @include phone-state-bg;
+  transition: background-image 0.25s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-image: url('../img/phone-icon-hover.svg');
+    @include phone-state-bg;
+  }
+
+  &:active {
+    background-image: url('../img/phone-icon-active.svg');
+    @include phone-state-bg;
+  }
+
+  &:focus-visible {
+    padding: 5px;
+    padding-left: 24px;
+    background-image: url('../img/phone-icon.svg');
+    @include phone-state-bg;
+    background-color: $focus-color;
+  }
+}

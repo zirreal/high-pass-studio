@@ -1,0 +1,55 @@
+.header {
+  &-top {
+    // position: fixed;
+    // width: 100%;
+    // top: 0;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    background-color: $mine-shaft-color;
+    // z-index: 5;
+    // overflow: hidden;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 10.6%;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-light;
+  }
+
+  &__socials {
+    margin-left: auto;
+  }
+
+  &-bottom {
+    // padding-top: 92px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    background-color: $tundora-color;
+  }
+
+  &__phone {
+    @include phone;
+  }
+}

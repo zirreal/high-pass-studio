@@ -1,0 +1,8 @@
+  // вычисляет view width
+@function vw($value, $base: 1920) {
+  @return $value / $base * 100vw;
+}
+
+@function vmin($value, $base: 320) {
+  @return $value / $base * 100vmin;
+}
