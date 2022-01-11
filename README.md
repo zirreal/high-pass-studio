@@ -45,7 +45,7 @@ a simple landing
 
 **DEMO only**.  
 
-`Simple landing for photo studio`
+`Simple photo studio landing `
 
 You can check out the result here::
  
