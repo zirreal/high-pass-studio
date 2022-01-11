@@ -52,7 +52,7 @@ You can check out the result here::
 
 ## Key Features:
 - Responsive design (implemented with css flex, css grid, @media queriers, etc.)
-- In this project SCSS and BEM Methodology were used
+- SCSS and BEM Methodology were used in this project
 - This project was build with gulp
 
 ## Technologies used in the Project: 
