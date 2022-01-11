@@ -8,7 +8,7 @@
 
 **Только для демонстрации**.  
 
-Верстка одностраничного сайта фотостудии
+`Верстка одностраничного сайта фотостудии`
 
 Результат можно увидеть здесь:
 
@@ -45,7 +45,7 @@ a simple landing
 
 **DEMO only**.  
 
-Simple landing for heart rate monitors store
+`Simple landing for photo studio`
 
 You can check out the result here::
  
