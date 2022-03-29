@@ -5,7 +5,7 @@ const htmlMin = require('gulp-htmlmin');
 const fileInclude = require('gulp-file-include');
 const rename = require('gulp-rename');
 const autoPrefixes = require('gulp-autoprefixer');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const shorthand = require('gulp-shorthand');
 const mediaQueries = require('gulp-group-css-media-queries');
@@ -179,7 +179,7 @@ const stylesBuild = () => {
 
 const scriptsBuild = () => {
     return src([
-        'src/js/components/**/*.js',
+        'src/js/**/*.js',
         'src/js/main.js'
     ])
     .pipe(babel({
