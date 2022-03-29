@@ -10,7 +10,7 @@
 
 `Верстка одностраничного сайта фотостудии`
 
-Результат можно увидеть здесь:
+Результат можно увидеть здесь: https://zirreal.github.io/high-pass-studio/
 
 
 ## Основные особенности:
@@ -47,7 +47,7 @@ a simple landing
 
 `Simple photo studio landing `
 
-You can check out the result here::
+You can check out the result here: https://zirreal.github.io/high-pass-studio/
  
 
 ## Key Features:
