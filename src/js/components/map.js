@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {},
         {
           iconLayout: "default#image",
-          iconImageHref: "../img/map.svg",
+          iconImageHref: "./img/map.svg",
           iconImageSize: [12, 12],
           iconImageOffset: [-3, -30],
           draggable: true,
